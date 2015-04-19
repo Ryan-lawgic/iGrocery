@@ -6,20 +6,51 @@ login
 </title>
 <link rel="stylesheet" type="text/css" href="login.css">
 </head>
+<script type="text/javascript">
+d = new Date();
+			
+document.writeln("The time is now "+d.toString()+"<br><br>");
+function checkdata()
+{
+	u = document.getElementById("username").value;
+      if (u.length==0) {
+         alert("User name cannot be empty!");
+         return false;
+      }
+     x = document.getElementById("password").value;
+      if (x.length==0) {
+         alert("Password cannot be empty!");
+         return false;
+      }
+      var NOW = new Date();
+		if (NOW.getHours()<=12) {
+			alert("Good morning "+u+ "Welcome to my website!");
+			return true;
+		} else if (NOW.getHours()<=18) {
+			alert("Good afternoon "+u+"Welcome to my website!");
+			return true;
+		} else {
+			alert("Good night "+u+"Welcome to my website!");
+			return true;
+		}
+}
+		
+      	
+</script>
 <body>
 	<div id="loginarea">
 	<h1>
 	Login
 	</h1>
 	<div id="login">
-	<form method="post" action="loginform.php">
+	<form method="post" action="homepage.html" onsubmit="return checkdata();">
 	<p>
 	User name 
-	<input type="text" id="username" value="username" name="username">
+	<input type="text" id="username" value="" name="username">
 	</p>
 	<p>
 	Password
-	<input type="password" id="password" value="password"name="password"
+	<input type="password" id="password" value=""name="password"
 	</p>
 	</div>
 	<div id="loginbutton">
