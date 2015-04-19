@@ -7,7 +7,11 @@ signup
 <link rel="stylesheet" type="text/css" href="signup.css" >
 </head>
 <body>
-<script>
+<script type="text/javascript">
+d = new Date();
+			
+document.writeln("The time is now "+d.toString()+"<br><br>");
+
 function checkdata()
 {
 	u = document.getElementById("username").value;
@@ -25,7 +29,20 @@ function checkdata()
          alert("Confirm Password cannot be empty!");
          return false;
       }
+		var NOW = new Date();
+		if (NOW.getHours()<=12) {
+			alert("Good morning "+u+ "Welcome to my website!");
+			return true;
+		} else if (NOW.getHours()<=18) {
+			alert("Good afternoon "+u+"Welcome to my website!");
+			return true;
+		} else {
+			alert("Good night "+u+"Welcome to my website!");
+			return true;
+		}
 }
+		
+      	
 </script>
 	<div id="signuparea">
 	<h1>
@@ -33,7 +50,7 @@ function checkdata()
 	</h1>
 	<h2><a href="homepage.html">HomePage</a></h2>
 	<div id="signup">
-	<form method="post" action="loginform.php" onsubmit="return checkdata();">
+	<form method="post" action="homepage.html" onsubmit="return checkdata();">
 	<p>
 	User name &nbsp;&nbsp;
 	<input type="text" id="username" value="" name="user">

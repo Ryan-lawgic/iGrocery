@@ -8,21 +8,28 @@ comment
 </head>
 <body>
 <script>
+d = new Date();
+			
+document.writeln("The time is now "+d.toString()+"<br><br>");
 function checkdata(){
-
       u = document.getElementById("comment").value;
       if (u.length==0) {
          alert("textarea cannot be empty!");
          return false;
-      }
+     }
+         else{
+         	alert(u+"Your comment has been collected!Thank you!");
+         return true;
+      }			
   }
+  
 </script>
 <div id="commentarea">
 	<h1>
 	Comment
 	</h1>
 	<h2><a href="homepage.html">HomePage</a></h2>
-	<form method="post" action="commentform.php" onsubmit="return checkdata();">
+	<form method="post" action="homepage.html" onsubmit="return checkdata();">
 	<div id="textarea">
 	<textarea id="comment"name="comment" cols="75" rows="15"></textarea>
 	</div>
