@@ -16,7 +16,6 @@
 		$datetime = $_POST['date'] . ' ' . $_POST['time'] . ':00';//插入时间方法
 		$date_posted = mysql_real_escape_string($datetime);
 		$date_edited = mysql_real_escape_string($datetime);
-		$decision ="no";
 
 		mysql_connect("localhost", "root","") or die(mysql_error()); //Connect to server
 		mysql_select_db("first_db") or die("Cannot connect to database"); //Connect to database
