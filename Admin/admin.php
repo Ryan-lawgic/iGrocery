@@ -19,7 +19,7 @@
 
 	<!--这里写更新产品-->
 	Update more product:
-	<form action="update.php" method="POST">
+	<form action="create.php" method="POST">
 		Product Name: <input type="text" name="name"/><br/>
 		Product Price: <input type="text" name="price"/><br/>
 		Product Postage: <input type="text" name="postage"/><br/>
@@ -37,6 +37,9 @@
 			<th>Price</th>
 			<th>Postage</th>
 			<th>Introduction</th>
+			<th>Image</th>
+			<th>Update</th>
+			<th>Delete</th>
 			<th>Date Posted</th>
 			<th>Date Edited</th>
 		</tr>
@@ -54,16 +57,17 @@
 			Print '<td align="center">'. $row['introduction'] . "</td>";
 			Print '<td align="center">'. $row['image'] . "</td>";
 			//image solution is not found yet
+			Print '<td align="center"><a href="update.php?id='. $row['id'] .'">Update</a> </td>';
+			Print '<td align="center"><a href="#" onclick="delete('.$row['id'].')">Delete</a> </td>';
 			Print '<td align="center">'. $row['date_posted']. "</td>";
 			Print '<td align="center">'. $row['date_edited']. "</td>";
-			//Print '<td align="center"><a href="edit.php?id='. $row['id'] .'">edit</a> </td>';
-			//Print '<td align="center"><a href="#" onclick="myFunction('.$row['id'].')">delete</a> </td>';
 			Print "</tr>";
 		}
 	?>
+
 	</table>
 		<script>
-			function myFunction(id)
+			function delete(id)
 			{
 			var r=confirm("Are you sure you want to delete this record?");
 			if (r==true)
