@@ -3,23 +3,15 @@ p
 	color:#FFFFFF;
 	font-family: Helvetica;
 	font-size: 16px;
-}
+	}
+
 h1
 {
 	color:#444444;
 	font-family: Helvetica;
-	border-radius: 20px;
-    background-color: rgb(100%,100%,60%);
-    width: 600px;
-    display:block;
 
 }
-h1:hover {
-      box-shadow: 5px 5px 10px;
-      position: relative;
-      top: -5px;
-      left: -5px;
-  }
+
 h2
 {
 	color:#444444;
@@ -47,7 +39,7 @@ h3
 	width:148px;
 	margin-left:625px;
 	margin-right:50px;
-	margin-top:-125px;
+	margin-top:-200px;
 
 }
 
