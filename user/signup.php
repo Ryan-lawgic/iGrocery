@@ -88,7 +88,7 @@ function checkdata()
 		<h1>
 		SignUp
 		</h1>
-		<h2><a href="homepage.html">HomePage</a></h2>
+		<h2><a href="homepage.php">HomePage</a></h2>
 			<div id="logo">
 			<img src="logo.png" id="Pic" width="148px" height="148px"
 			onmouseover="alternative(this.id,'qrcode.png');" 
