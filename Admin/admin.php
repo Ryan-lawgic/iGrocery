@@ -58,7 +58,7 @@
 			Print '<td align="center">'. $row['image'] . "</td>";
 			//image solution is not found yet
 			Print '<td align="center"><a href="update.php?id='. $row['id'] .'">Update</a> </td>';
-			Print '<td align="center"><a href="#" onclick="delete('.$row['id'].')">Delete</a> </td>';
+			Print '<td align="center"><a href="delete.php?id='.$row['id'].'">Delete</a> </td>';
 			Print '<td align="center">'. $row['date_posted']. "</td>";
 			Print '<td align="center">'. $row['date_edited']. "</td>";
 			Print "</tr>";
@@ -66,15 +66,5 @@
 	?>
 
 	</table>
-		<script>
-			function delete(id)
-			{
-			var r=confirm("Are you sure you want to delete this record?");
-			if (r==true)
-			  {
-			  	window.location.assign("delete.php?id=" + id);
-			  }
-			}
-		</script>
 </body>
 </html>
