@@ -1,0 +1,52 @@
+p
+{
+	color:#444444;
+	font-family: Helvetica;
+	font-size: 16px;
+	}
+
+h1
+{
+	color:#444444;
+	font-family: Helvetica;
+
+}
+
+h2
+{
+	color:#444444;
+	font-family: Helvetica;
+}
+h3
+{
+	color:#444444;
+	font-family: Helvetica;
+}
+#info
+{
+	border: 1px solid yellow;
+	height:150px;
+	width:898px;
+	margin-left:50px;
+	margin-right:50px;
+	margin-top:10px;
+
+}
+#chair
+{
+	border: 1px solid blue;
+	height:577px;
+	width:898px;
+	margin-left:50px;
+	margin-right:50px;
+	margin-top:10px;	
+}
+#button
+{
+	border: 1px solid red;
+	height:50px;
+	width:100px;
+	margin-left:800px;
+	margin-right:50px;
+	margin-top:10px;	
+}
