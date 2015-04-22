@@ -8,18 +8,21 @@
 	
 </head>
 <body>
+
 <div id="header">
 	<div style="width:400px;  float:left;">
 		<a href="index.html"><img src="logo.png" height="130px"></a>
 	</div>
 	<div style="width:590px;float:left;">
-		<form method="post" action="signup.html" enctype="">
+		<!--<form method="post" action="signup.html" enctype="">
 			<p>
 				User Name: <input type="text" id="userName" name="userName" value=""/>
 				Password: <input type="password" id="passWord" name="passWord" value""/>
 				<input type="submit" value="Log in/Sign up" />
 			</p>
-		</form>
+		</form>-->
+		<a href="user/login.php">Log in</a>
+		<a href="user/signup.php">Sign up</a>
 	</div>
 	<div id="bdshare" class="bdshare_t bds_tools get-codes-bdshare">
        <span class="bds_more">Share into:</span>
@@ -40,9 +43,9 @@
 <div id="menu">
 	<ul>
 		<li><a href="Sofa.html">Sofa</a></li>
-		<li><a href="homedecor.html">Home Decor</a></li>
-		<li><a href="bed.html">Bed</a></li>
-		<li><a href="chair.html">Chair</a></li>
+		<li><a href="">Home Decor</a></li>
+		<li><a href="">Bed</a></li>
+		<li><a href="">Chair</a></li>
 	</ul>	
 </div>
 
