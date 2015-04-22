@@ -1,3 +1,11 @@
+<?php
+	session_start();
+	if($_SESSION['admin'])
+	{
+		header("location:admin.php");
+	}
+?>
+
 <html>
 <head>
 	<title>Administration</title>
