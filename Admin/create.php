@@ -7,7 +7,7 @@
 	}
 
 	
-		mysql_connect("localhost", "root","") or die(mysql_error()); //Connect to server
+		mysql_connect("localhost", "root","") or die(mysql_error()); //Connect to server 这是一个为Slack做的测试
 		mysql_select_db("first_db") or die("Cannot connect to database"); //Connect to database
 		$name = mysql_real_escape_string($_POST['name']);
 		$price = mysql_real_escape_string($_POST['price']);
